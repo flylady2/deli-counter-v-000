@@ -4,7 +4,7 @@ def line(katz_deli)
   if katz_deli == []
     puts "The line is currently empty."
   else
-    
+
     new_array = katz_deli.collect.each_with_index {|name, index|
       "#{index + 1}. #{name}"}
     puts "The line is currently: #{new_array.join(", ")}"
