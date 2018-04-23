@@ -4,9 +4,9 @@ def line(katz_deli)
   if katz_deli == []
     puts "The line is currently empty."
   else
-
-  katz_deli.collect.each_with_index {|name, index|
-      "#{index + 1}. #{name}"}.join(", ")
+    puts "The line is currently:"
+    katz_deli.collect.each_with_index {|name, index|
+      puts "#{index + 1}. #{name}"}.join(", ")
 
   end
 end
